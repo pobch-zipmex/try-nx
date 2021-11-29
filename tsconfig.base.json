@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@pobch-zipmex/button": ["libs/button-publish/src/index.ts"],
-      "@try-nx/button": ["libs/button/src/index.ts"]
+      "@pobch-zipmex/fancy": ["libs/fancy-pub/src/index.ts"],
+      "@try-nx/button": ["libs/button/src/index.ts"],
+      "@try-nx/fancy-text": ["libs/fancy-text/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

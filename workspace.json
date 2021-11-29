@@ -4,6 +4,8 @@
     "button": "libs/button",
     "button-publish": "libs/button-publish",
     "demo": "apps/demo",
-    "demo-e2e": "apps/demo-e2e"
+    "demo-e2e": "apps/demo-e2e",
+    "fancy-pub": "libs/fancy-pub",
+    "fancy-text": "libs/fancy-text"
   }
 }

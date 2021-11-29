@@ -1,0 +1,42 @@
+{
+  "root": "libs/fancy-pub",
+  "sourceRoot": "libs/fancy-pub/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/fancy-pub",
+        "tsConfig": "libs/fancy-pub/tsconfig.lib.json",
+        "project": "libs/fancy-pub/package.json",
+        "entryFile": "libs/fancy-pub/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "assets": [
+          {
+            "glob": "libs/fancy-pub/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/fancy-pub/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/fancy-pub"],
+      "options": {
+        "jestConfig": "libs/fancy-pub/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "root": "libs/fancy-text",
+  "sourceRoot": "libs/fancy-text/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/fancy-text/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/fancy-text"],
+      "options": {
+        "jestConfig": "libs/fancy-text/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
