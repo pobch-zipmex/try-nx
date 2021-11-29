@@ -1,6 +1,6 @@
 import { Button } from 'antd';
 import { MyButton } from '@try-nx/button';
-import { MyButtonPublish } from '@pob-org/button';
+import { MyButtonPublish } from '@pobch-zipmex/button';
 import styles from './app.module.less';
 import './global.less';
 import { ReactComponent as Logo } from './logo.svg';

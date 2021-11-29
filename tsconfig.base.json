@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@pob-org/button": ["libs/button-publish/src/index.ts"],
+      "@pobch-zipmex/button": ["libs/button-publish/src/index.ts"],
       "@try-nx/button": ["libs/button/src/index.ts"]
     }
   },
