@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@pob-org/button": ["libs/button-publish/src/index.ts"],
+      "@try-nx/button": ["libs/button/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

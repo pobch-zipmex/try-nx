@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "button": "libs/button",
+    "button-publish": "libs/button-publish",
     "demo": "apps/demo",
     "demo-e2e": "apps/demo-e2e"
   }

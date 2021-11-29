@@ -1,0 +1,42 @@
+{
+  "root": "libs/button-publish",
+  "sourceRoot": "libs/button-publish/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/button-publish",
+        "tsConfig": "libs/button-publish/tsconfig.lib.json",
+        "project": "libs/button-publish/package.json",
+        "entryFile": "libs/button-publish/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "assets": [
+          {
+            "glob": "libs/button-publish/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/button-publish/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/button-publish"],
+      "options": {
+        "jestConfig": "libs/button-publish/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}
