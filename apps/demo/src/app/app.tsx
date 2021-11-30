@@ -1,6 +1,6 @@
 import { Button } from 'antd';
 import { MyButton } from '@try-nx/button';
-import { MyButtonPublish } from '@pobch-zipmex/button';
+import { MyButtonPublish, pob } from '@pobch-zipmex/button';
 import styles from './app.module.less';
 import './global.less';
 import { ReactComponent as Logo } from './logo.svg';
@@ -19,6 +19,7 @@ export function App() {
         </div>
         <MyButton />
         <MyButtonPublish />
+        <div>{pob.red}</div>
         <h2>Resources &amp; Tools</h2>
         <p>Thank you for using and showing some ♥ for Nx.</p>
         <div className="flex github-star-container">

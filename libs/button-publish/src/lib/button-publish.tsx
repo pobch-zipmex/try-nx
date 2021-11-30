@@ -21,3 +21,9 @@ export function MyButtonPublish(props: ButtonPublishProps) {
     </div>
   );
 }
+
+export const pob = {
+  red: 'red-color-hex',
+  blue: 'blue-color-hex',
+  space10: 'space-number',
+} as const;
